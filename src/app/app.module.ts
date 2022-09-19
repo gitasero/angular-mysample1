@@ -14,7 +14,7 @@ import { CarDescriptionComponent } from './car-description/car-description.compo
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: 'car', component: CarDescriptionComponent },
+      { path: '', component: CarDescriptionComponent },
     ])
   ],
   declarations: [
