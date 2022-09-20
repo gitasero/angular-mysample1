@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
@@ -10,13 +11,17 @@ import { TestStringComponent } from './test-string/test-string.component';
 import { CarDescriptionComponent } from './car-description/car-description.component';
 import { TestEvent1Component } from './test-event1/test-event1.component';
 import { TestEvent2Component } from './test-event2/test-event2.component';
+import { TestEvent3Component } from './test-event3/test-event3.component';
+import { ConversionComponent } from './conversion/conversion.component';
+
 
 @NgModule({
   imports: [
     BrowserModule,
+    FormsModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: TestEvent2Component },
+      { path: '', component: ConversionComponent },
     ])
   ],
   declarations: [
@@ -25,8 +30,10 @@ import { TestEvent2Component } from './test-event2/test-event2.component';
     ProductListComponent,
     TestStringComponent,
     CarDescriptionComponent,
-    TestEvent2Component
+    TestEvent3Component,
+    ConversionComponent
   ],
+  providers: [],
   bootstrap: [
     AppComponent
   ]

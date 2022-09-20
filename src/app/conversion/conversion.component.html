@@ -1,0 +1,14 @@
+<h1>Convertitore EUR/USD</h1>
+<label for="amount">Somma in Euro da convertire</label>
+<div>
+  <input
+    type="number"
+    id="amount"
+    size="20"
+    [(ngModel)]='eur'
+    >
+  <span>
+    {{ (eur ? eur : 0) | currency:'EUR' }} = {{ usd | currency:'USD' }}
+  </span>
+</div>
+<button (click)="updateEUR(10)">+10 EUR</button>
