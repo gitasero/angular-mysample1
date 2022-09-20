@@ -8,13 +8,14 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { TestStringComponent } from './test-string/test-string.component';
 import { CarDescriptionComponent } from './car-description/car-description.component';
+import { TestEvent1Component } from './test-event1/test-event1.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: CarDescriptionComponent },
+      { path: '', component: TestEvent1Component },
     ])
   ],
   declarations: [
