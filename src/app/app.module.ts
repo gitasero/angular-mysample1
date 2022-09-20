@@ -9,13 +9,14 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { TestStringComponent } from './test-string/test-string.component';
 import { CarDescriptionComponent } from './car-description/car-description.component';
 import { TestEvent1Component } from './test-event1/test-event1.component';
+import { TestEvent2Component } from './test-event2/test-event2.component';
 
 @NgModule({
   imports: [
     BrowserModule,
     ReactiveFormsModule,
     RouterModule.forRoot([
-      { path: '', component: TestEvent1Component },
+      { path: '', component: TestEvent2Component },
     ])
   ],
   declarations: [
@@ -23,7 +24,8 @@ import { TestEvent1Component } from './test-event1/test-event1.component';
     TopBarComponent,
     ProductListComponent,
     TestStringComponent,
-    CarDescriptionComponent
+    CarDescriptionComponent,
+    TestEvent2Component
   ],
   bootstrap: [
     AppComponent
